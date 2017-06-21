@@ -1,13 +1,13 @@
 import React from 'react';
-import users from "../data/users";
+import { peoples } from "../data/peoples";
 
 class App extends React.Component {
     render() {
         return (
         	<div>
 		        {
-		        	users.map((user, index) => {
-						return(<span key={index}>{user.name}</span>);
+		        	peoples.map((people, index) => {
+						return(<span key={index}>{`${people.FirstName} ${people.LastName}`}</span>);
 		        	})
 		        }
         	</div>
