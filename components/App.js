@@ -1,6 +1,6 @@
 import React from "react";
 import { peoples, properties } from "../data/peoples";
-import {getVisibleInTableProperties} from "../utils/filters";
+import {getVisibleInTableProperties, getVisibleInDetailsProperties} from "../utils/filters";
 import {sortByDisplayOrderProperty} from "../utils/sorters";
 import Table from "./Table";
 import DetailsPage from "./Details";
@@ -30,7 +30,7 @@ class App extends React.Component {
         <Table columns={sortedColumnsForTable} rows={peoples} openDetails={this.openPeople} />
         {
           !(this.state.openedPeopleId == null)
-              ? <DetailsPage people={this.getOpenedPeople()}/>
+              ? <DetailsPage people={this.getOpenedPeople()} properties={getVisibleInDetailsProperties(properties)}/>
               : null
         }
       </div>

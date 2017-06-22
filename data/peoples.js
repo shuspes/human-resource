@@ -42,66 +42,83 @@ export const peoples = [
 
 export const properties = [
   {
+    Code: "Id",
+    Type: "string",
+    Name: "Id",
+    DisplayOrder: 0,
+    ShouldDisplayInTable: false,
+    IsVisible: false
+  },
+  {
     Code: "FirstName",
     Type: "string",
     Name: "First Name",
     DisplayOrder: 0,
-    ShouldDisplayInTable: true
+    ShouldDisplayInTable: true,
+    IsVisible: true
   },
   {
     Code: "LastName",
     Type: "boolean",
     Name: "Last Name",
     DisplayOrder: 1,
-    ShouldDisplayInTable: true
+    ShouldDisplayInTable: true,
+    IsVisible: true
   },
   {
     Code: "Gender",
     Type: "select",
     Name: "Gender",
     DisplayOrder: 2,
-    ShouldDisplayInTable: true
+    ShouldDisplayInTable: true,
+    IsVisible: true
   },
   {
     Code: "Age",
     Type: "number",
     Name: "Age",
     DisplayOrder: 3,
-    ShouldDisplayInTable: true
+    ShouldDisplayInTable: true,
+    IsVisible: true
   },
   {
     Code: "Email",
     Type: "string",
     Name: "Email",
     DisplayOrder: 4,
-    ShouldDisplayInTable: false
+    ShouldDisplayInTable: false,
+    IsVisible: true
   },
   {
     Code: "Phone",
     Type: "string",
     Name: "Phone",
     DisplayOrder: 5,
-    ShouldDisplayInTable: false
+    ShouldDisplayInTable: false,
+    IsVisible: true
   },
   {
     Code: "CompanyName",
     Type: "string",
     Name: "Company",
     DisplayOrder: 6,
-    ShouldDisplayInTable: false
+    ShouldDisplayInTable: false,
+    IsVisible: true
   },
   {
     Code: "CurrentPosition",
     Type: "string",
-    Name: "CurrentPosition",
+    Name: "Current Position",
     DisplayOrder: 7,
-    ShouldDisplayInTable: false
+    ShouldDisplayInTable: false,
+    IsVisible: true
   },
   {
     Code: "DesiredPosition",
     Type: "string",
-    Name: "DesiredPosition",
+    Name: "Desired Position",
     DisplayOrder: 8,
-    ShouldDisplayInTable: true
+    ShouldDisplayInTable: true,
+    IsVisible: true
   }
 ];
