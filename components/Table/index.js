@@ -1,5 +1,4 @@
 import React from "react";
-import {sortByDisplayOrderProperty} from "../../utils/sorters";
 import TableHeader from "./Header";
 import TableBody from "./Body";
 
@@ -10,12 +9,10 @@ class Table extends React.Component {
       rows
     } = this.props;
 
-    const sortedColumns = sortByDisplayOrderProperty(columns);
-
     return (
       <table>
-        <TableHeader columns={sortedColumns} />
-        <TableBody columns={sortedColumns} rows={rows} />
+        <TableHeader columns={columns} />
+        <TableBody columns={columns} rows={rows} />
       </table>
     );
   }

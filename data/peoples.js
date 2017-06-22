@@ -50,7 +50,7 @@ export const peoplesTableColumns = [
   },
   {
     Code: "LastName",
-    Type: "string",
+    Type: "boolean",
     Name: "Last Name",
     DisplayOrder: 1,
     ShouldDisplayInTable: true
