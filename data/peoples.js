@@ -40,7 +40,7 @@ export const peoples = [
   }
 ];
 
-export const peoplesTableColumns = [
+export const properties = [
   {
     Code: "FirstName",
     Type: "string",
