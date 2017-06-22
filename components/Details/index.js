@@ -13,7 +13,7 @@ class DetailsPage extends React.Component {
           properties.map((property, index) => {
             return (
               <div key={index}>
-                <span style={{"font-weight": "bold", "padding-right": "5px"}}>
+                <span style={{fontWeight: "bold", paddingRight: "5px"}}>
                   {property.Name}:
                 </span>
                 <span>{people[property.Code]}</span>
