@@ -1,18 +1,13 @@
-import React from 'react';
-import { peoples } from "../data/peoples";
+import React from "react";
+import { peoples, peoplesTableColumns } from "../data/peoples";
+import Table from "./Table";
 
-class App extends React.Component {
-    render() {
-        return (
-        	<div>
-		        {
-		        	peoples.map((people, index) => {
-						return(<span key={index}>{`${people.FirstName} ${people.LastName}`}</span>);
-		        	})
-		        }
-        	</div>
-        )
-    }
-}
+const App = () => {
+  return (
+    <div>
+      <Table columns={peoplesTableColumns} rows={peoples}/>
+    </div>
+  );
+};
 
 export default App;
