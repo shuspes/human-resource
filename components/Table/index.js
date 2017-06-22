@@ -6,13 +6,14 @@ class Table extends React.Component {
   render() {
     const {
       columns,
-      rows
+      rows,
+      openDetails
     } = this.props;
 
     return (
       <table>
         <TableHeader columns={columns} />
-        <TableBody columns={columns} rows={rows} />
+        <TableBody columns={columns} rows={rows} openDetails={openDetails}/>
       </table>
     );
   }

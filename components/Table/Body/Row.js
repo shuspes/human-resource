@@ -5,11 +5,12 @@ class TableBodyRow extends React.Component {
   render() {
     const {
       row,
-      columns
+      columns,
+      openDetails
     } = this.props;
 
     return (
-      <tr>
+      <tr onClick={openDetails.bind(this, row.Id)}>
         {
           columns.map(column => <TableBodyCell value={row[column.Code]} />)
         }
